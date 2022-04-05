@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debouncing</title>
+</head>
+
+<body>
+    <input type="text" id="searchInput" />
+
+    <script>
+        // input 변경
+        function addInputEvent(){
+            let timer  = null;
+            document.getElementById("searchInput").addEventListener("input", debouncing);
+            function debouncing(e){
+                if (timer) {
+                    clearTimeout(timer);
+                }
+                timer = setTimeout(()=>{
+                    console.log('fetch', e.target.value);
+                }, 200);
+            }
+            function throttling(e){
+                if (!timer) {
+                    timer = setTimeout(() => {
+                        timer = null;
+                        console.log('fetch', e.target.value);
+                    }, 200);
+                }
+            }
+        }
+
+        function init(){
+            addInputEvent()
+        }
+        init();
+        
+    </script>
+</body>
+</html>
