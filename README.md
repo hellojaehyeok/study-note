@@ -25,6 +25,7 @@
         1. 동적으로 추가된 스크립트는 기본적으로 async속성이다.
         2. 참고 : https://ko.javascript.info/script-async-defer
 
+<br /><br />
 
 * 동적으로 코드를 변경할때 `createElement`를 사용하면 향우 유지보수에서 어려움을 겪을 수 있다.
     - Element.innerHTML
@@ -43,3 +44,4 @@
         <!-- afterend -->
         ```
         3. https://developer.mozilla.org/ko/docs/Web/API/Element/insertAdjacentHTML
+
