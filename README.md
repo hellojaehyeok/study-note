@@ -1,7 +1,8 @@
 # study-note
 시니어가 되고 싶은 주니어의 개발 노트입니다.      
 프론트 개발을 하며 부족했던 이론과 cs를 정리하는 글입니다.     
-
+이 레파지토리에서는 간단하게 정리하고 있습니다.          
+자세히 정리한 블로그 주소를 각각 첨부하였으니 참고해주세요.      
 
 <details>
 <summary>무한 스크롤</summary>
@@ -55,5 +56,47 @@
         <!-- afterend -->
         ```
         3. https://developer.mozilla.org/ko/docs/Web/API/Element/insertAdjacentHTML
+</details>
+<br />
+
+<details>
+<summary>브라우저 동작 관정</summary>
+
+1. Dom Tree 생성, CSSOM Tree 생성
+2. Render Tree 생성
+3. Render Tree 배치 -> Layout(Reflow)
+4. Render Tree 그리기 -> Paint(Repaint)
+
+[블로그 정리](https://talkwithcode.tistory.com/80?category=1019863)
+</details>
+<br />
+
+<details>
+<summary>Closure (클로저)</summary>
+
+함수가 생성될 당시의 외부 변수를 기억하여 생성 이후에도 계속 접근 가능한 것.         
+자신이 생성될 때의 환경을 기억하는 함수.    
+[블로그 정리](https://talkwithcode.tistory.com/84?category=1019863)  
+</details>
+<br />
+
+<details>
+<summary>Virtual Dom</summary>
+
+Dom을 조작하게되면 Layout, Paint, Render Tree 생성 등 여러 과정들이 일어납니다.     
+UI가 변경되면 Virtual Dom에 먼저 적용시킵니다.       
+현재 Dom과 Virtual Dom을 비교하여 변경된 부분만 실제 Dom에 전달해줍니다.       
+
+[블로그 정리](https://talkwithcode.tistory.com/81?category=1019863)  
+</details>
+<br />
+
+<details>
+<summary>호이스팅</summary>
+
+모든 선언문이 해당 스코프의 선두로 옮겨진 것처럼 동작하는 특성       
+변수는 `선언->초기화->할당` 3단계에 걸쳐 생성됩니다.  
+
+[블로그 정리](https://talkwithcode.tistory.com/78?category=1019863)
 </details>
 <br />
