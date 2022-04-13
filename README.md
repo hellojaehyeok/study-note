@@ -60,7 +60,7 @@
 <br />
 
 <details>
-<summary>브라우저 동작 관정</summary>
+<summary>브라우저 동작 과정</summary>
 
 1. Dom Tree 생성, CSSOM Tree 생성
 2. Render Tree 생성
